@@ -26,7 +26,6 @@ Json::Json(const double& num): _kind(kNumber), _data(new double(num)) {}
 Json::Json(const std::string & s): _kind(kString), _data(new std::string(s)) {}
 
 Json::Json(const Json& json){
-	//TRACK("COPY");
 	Copy(json);
 }
 
@@ -412,7 +411,7 @@ Json Json::ParseFromFile(const char * file){
 	return Parse(str.c_str());
 }
 
-/*以下是Json::Parser的一些函数实现*/
+/*脪脭脧脗脢脟Json::Parser碌脛脪禄脨漏潞炉脢媒脢碌脧脰*/
 
 char Json::Parser::NextChar(bool skip){
 	
@@ -548,7 +547,6 @@ Json* Json::Parser::ParseArray(){
 Json* Json::Parser::ParsePair(){
 	Json* jstring = ParsePrimary();
 	if(jstring->_kind != kString) JSON_ASSERT("json of string expected");
-	
 	NextChar();
 	if(ch != ':') JSON_ASSERT("expect \":\"");
 	Json* value = ParsePrimary();

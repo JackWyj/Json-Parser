@@ -21,6 +21,8 @@ Json sjson = Json::Parse("[\"a\", \"b df\",456, {\"dicdfk\": true, \"yup\" : \"y
 	"pusdfd"
 ]
 */
+//从文件构造json
+Json json = Json::ParseFromFile("e:/in.txt");
 ```
 ##修改
 ```cpp

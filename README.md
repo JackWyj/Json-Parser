@@ -24,6 +24,9 @@ Json sjson = Json::Parse("[\"a\", \"b df\",456, {\"dicdfk\": true, \"yup\" : \"y
 //从文件构造json
 Json json = Json::ParseFromFile("e:/in.txt");
 ```
+`static Json Json::Parse(const char * str)`从字符串中解析json对象<br>
+`static Json Json::ParseFromFile(const char * file)` 从文件中读取字符串，然后解析
+
 ##修改
 ```cpp
 sjson[0] = "sdfer";

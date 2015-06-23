@@ -96,3 +96,5 @@ if(!sjson.WriteFile("e:/output.txt")){
 ```
 `bool Json::WriteFile(const char * file)` 将json写入指定文件，操作成功就返回`true`，否则返回`false`
 	
+##Thanks
+谢谢[ggicci](https://github.com/ggicci)，我从你的代码学了很多东西。

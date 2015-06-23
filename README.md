@@ -1,9 +1,6 @@
 # Json-Parser
 ##简介
-这是参考[ggicci--json](https://github.com/ggicci/ggicci--json)的一个基于C++的json工具库, 而与之不同的是，解析代码是自己写的，参考的是接口的设计。<br>
-其主要功能是能够解析字符串形式的json, 形成C++对象，能够对该对象进行增删改等操作，如下代码所示
-
-
+这是参考[ggicci--json](https://github.com/ggicci/ggicci--json)的一个基于C++的json工具库, 而与之不同的是，解析代码是自己写的，参考的是接口的设计。其主要功能是能够解析字符串形式的json, 形成C++对象，能够对该对象进行增删改等操作，如下代码所示
 
 ##构造对象
 ```cpp

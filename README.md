@@ -86,7 +86,7 @@ cout << sjson; //效果跟缩进为4个空格的输出一样
 Json json = Json::ParseFromFile("e:/in.txt");
 //写入文件
 if(!sjson.WriteFile("e:/output.txt")){
-	std::cout << "写入文件失败" << endl;
+	std::cout << "写入文件失败" << std::endl;
 }
 ```
 	

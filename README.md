@@ -43,8 +43,8 @@ sjson[3]["yup"] = Json("WTF");
 ```
 ##增删
 ```cpp
-sjson.Add(4656);
-sjson.Remove(2);
+sjson.Add(4656); //在数组中增加4656
+sjson.Remove(2); //删除数组的第三个元素
 /*修改后该json对象如下所示
 [
 	"sdfer",
@@ -58,6 +58,7 @@ sjson.Remove(2);
 ]
 */
 ```
+
 ##打印	
 ```cpp
 //没有缩进的输出
